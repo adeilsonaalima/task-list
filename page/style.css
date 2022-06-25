@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+}
+
+label {
+	display: none;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url("../assets/images/background.jpg");
+	background-size: cover;
+	user-select: none;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	color: white;
+	text-shadow: 0.1rem 0.1rem 0.2rem #048ac3;
+	filter: contrast(100%)
+}
+
+header > .container {
+	text-align: center;
+	margin: 1rem;
+}
+
+main > .container {
+	text-align: center;
+}
+
+main > .container > .field {
+	width: auto;
+	display: inline-block;
+	border-radius: 0.2rem;
+	background-color: #FFF;
+	border: 0.1rem solid #02abf4;
+	white-space: nowrap;
+}
+
+main > .container > .field > input {
+	width: 54vw;
+	border: none;
+	outline: none;
+	margin-left: 0.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+main > .container > .field > button {
+	width: 1.7rem;
+	max-width: 1.7rem;
+	min-width: 1.7rem;
+	height: 1.7rem;
+	margin-right: 0.2rem;
+	border: none;
+	position: relative;
+	right: 0;
+	background-color: transparent;
+	box-sizing: border-box;
+	color: transparent;
+	user-select: none;
+}
+
+main > .container > .field > button:after { 		 
+	content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 3px;
+  background: #02abf4;
+  top: 50%;
+  left: 50%;
+}
+
+main > .container > .field > button:before {
+  content: '';
+  position: absolute;
+	transform: translate(-50%, -50%);
+	height: 3px;
+  width: 50%;
+	background: #02abf4;
+  top: 50%;
+  left: 50%;
+}
+
+main > .container > .field > button:hover {
+  transform: scale(1.3);
+}
+
+main > .list > .toDoList {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+main > .list > .toDoList > .item {
+	width: 80vw;
+	height: auto;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	border-radius: 0.2rem;
+	background-color: #FFF;
+	border: 0.1rem solid #02abf4;
+}
+
+main > .list > .toDoList > .item > input {
+	margin-left: 0.7rem;
+	margin-right: 0.5rem;
+}
+
+main > .list > .toDoList > .item > p {
+		text-align: justify;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		overflow-wrap: anywhere;
+}
+
+main > .list > .toDoList > .item > p:first-letter {
+    text-transform: uppercase;
+}
+
+main > .list > .toDoList > .item > button {
+	border: none;
+	width: 1.7rem;
+	height: 1.7rem;
+	max-width: 1.7rem;
+	min-width: 1.7rem;
+	margin-left: auto;
+	position: relative;
+	margin-right: 0.5rem;
+	background-color: transparent;
+	color: transparent;
+}
+
+main > .list > .toDoList > .item > button:after {
+	content: '';
+  position: absolute;
+	transform: rotate(45deg) translate(-50%, -50%);
+  height: 50%;
+  width: 3px;
+  background: #02abf4;
+  top: 45%;
+  left: 50%;
+}
+
+main > .list > .toDoList > .item > button:before {
+	content: '';
+  position: absolute;
+  transform: rotate(135deg) translate(-6.5px, 1px);
+  height: 50%;
+  width: 3px;
+  background: #02abf4;
+  top: 45%;
+  left: 50%;
+}
+
+main > .list > .toDoList > .item > button:hover {
+	transform: scale(1.1)
+}
+
+main > .list > .doneList {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+main > .list > .doneList > .item {
+	width: 80vw;
+	height: auto;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	border-radius: 0.2rem;
+	background-color: #FFF;
+	border: 0.1rem solid #02abf4;
+}
+
+main > .list > .doneList > .item > input {
+	margin-left: 0.7rem;
+	margin-right: 0.5rem;
+}
+
+main > .list > .doneList > .item > button {
+	border: none;
+	width: 1.7rem;
+	height: 1.7rem;
+	max-width: 1.7rem;
+	min-width: 1.7rem;
+	margin-left: auto;
+	position: relative;
+	margin-right: 0.5rem;
+	background-color: transparent;
+	color: transparent;
+	user-select: none;
+}
+
+main > .list > .doneList > .item > button:after {
+	content: '';
+  position: absolute;
+	transform: rotate(45deg) translate(-50%, -50%);
+  height: 50%;
+  width: 3px;
+  background: #02abf4;
+  top: 45%;
+  left: 50%;
+}
+
+main > .list > .doneList > .item > button:before {
+	content: '';
+  position: absolute;
+  transform: rotate(135deg) translate(-6.5px, 1px);
+  height: 50%;
+  width: 3px;
+  background: #02abf4;
+  top: 45%;
+  left: 50%;
+}
+
+main > .list > .doneList > .item > button:hover {
+	transform: scale(1.1)
+}
+
+main > .list > .doneList > .done > p:first-letter {
+    text-transform: uppercase;
+}
+
+main > .list > .doneList > .done > p {
+		text-align: justify;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		text-decoration: line-through;
+		overflow-wrap: anywhere;
+}
+
+
+
+
+
+	
+
+
+
